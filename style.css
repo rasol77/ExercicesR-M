@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --principal: #24325FFF;
+  --secundario: #A6EEE6FF;
+  --especial: rgb(225, 253, 124);
+} 
+h1{
+    color: var(--secundario);
+    text-shadow: 0  0 20px #d2da4b;
+    font-size: 3rem;
+}
+
+body{
+    background-image: url(https://wallpapercave.com/wp/IpGSDFe.jpg); 
+    /*background: var(--principal);*/
+    font-family: 'Shadows Into Light', cursive;
+}
+
+body > header {
+    color: var(--especial);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main{
+    padding: 0 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+article{
+    background: var(--secundario);
+    width: 15rem;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--especial);
+    box-shadow:  0 0 15px var(--especial);
+}
+
+img{
+    width: 100%;
+}
+
+article h2{
+    color: var(--principal);
+    text-align: center;
+    text-shadow: 0 2px 10px var(--especial);
+}
+
+article section{
+    font-size: 1.2rem;
+    color: var(--principal);
+    text-shadow: 0 2px 10px var(--especial);
+    display: flex;
+    gap: 1rem;
+    justify-content:  center;
+    padding: 1rem;
+}
+
+
+.alive{
+    color: green;
+}
+
+.dead{
+    color: black;
+}
